@@ -1,117 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio Website</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>My Portfolio Website</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <link
+    href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600'
+    rel='stylesheet'
+    type='text/css'
+  >
+  <link
+    rel="stylesheet"
+    href="./stylesheets/styles.css"
+  >
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo-items">
+        <img
+          src="./images/RemedyOnline-Logo.png"
+          alt=""
+          class="logo"
+        >
         <h1>
           <span class="theme-color">R</span>emedy
           <span class="theme-color">O</span>nline
         </h1>
-        <div class="nav-items">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="socials">
-          <!-- Add font awesome icons -->
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-behance"></a>
-          <a href="#" class="fa fa-github"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a>
-        </div>
-      </nav>
-    </header>
-    <section>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button
+          type="submit"
+          id="submit"
+          name="submit"
+          class="btn btn-lg"
+        >Hire Me!</button>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-textContent">
         <div>
-            <h3>Hi there...</h3>
-            <h1>I'm Michael Agyemang Prempeh</h1>
-            <h2>A passionate Frontend Web Developer/Designer</h2>
-            <button><a href="#">Hire me!</a></button>
+          <p class="hi-tag">Hi there...</p>
+          <h1>I'm <span class="myName">Michael</span><br>
+            A passionate Frontend Web Developer + UX Designer</h1>
+          <p class="introCaption">
+            I break down complex user experience problems to create integrity focussed solutions that connect billions
+            of
+            people...</p>
         </div>
-        <div>
-            <img src="" alt="myPic" >
+        <div class="connectItems">
+          <button><a href="#">View Portfolio</a></button>
+          <div class="social-links">
+            <span><a
+                href="#"
+                target="_blank"
+              ><i class="fa fa-linkedin fa-2x"></i></a></span>
+            <span><a
+                href="#"
+                class="fa fa-behance fa-2x"
+              ></a></span>
+            <span><a
+                href="#"
+                target="_blank"
+              ><i class="fa fa-github fa-2x"></i></a></span>
+            <span><a href="#"><i class="fa fa-codepen fa-2x"></i></a></span>
+            <span><a
+                href="#"
+                class="fa fa-instagram fa-2x"
+              ></a></span>
+            <span><a
+                target="_blank"
+                href="#"
+                target="_blank"
+              ><i class="fa fa-twitter fa-2x"></i></a></span>
+          </div>
         </div>
+      </div>
+      <div class="hero-imageContent">
+        <img
+          src="./images/blackGuy1.png"
+          alt="myPic"
+          class="userImage1"
+        >
+      </div>
     </section>
-    <section>
-        <h1>About me</h1>
-        <div>
-            <div>
-                <img src="#" alt="myPic2">
-            </div>
-            <div>
-                <p>"Hi, I'm Michael, a passionate UI/UX Designer and Junior Web Developer. With a background in Computer Engineering, I've dived deep into design and development, working on various projects, including web and app designs. Currently, I’m advancing my skills through hands-on web development training with Generation Ghana and MEST Africa, focusing on building functional and aesthetically pleasing digital experiences."</p>
-                <button><a href="#">Preview my Resume</a></button>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h1>Skills</h1>
-        <p>I am striving to never stop learning and improving.</p>
-        <div>
-          <ul>
-            <li>UI/UX Design</li>
-            <li>Frontend Web Development</li>
-            <li>Data Analytics</li>
-            <li>MS Office Suit</li>
-          </ul>
-        </div>
-    </section>
-    <section>
-        <h1>Portfolio</h1>
-        <div>
-            <div>
-                <h2>Project 1</h2>
-                <h5>Mobile application 1.....</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus repellendus magnam perferendis aut dolore deserunt quo cum accusantium. Ullam quae, possimus quibusdam corporis voluptates vero ut aliquam sit rem laboriosam?
-                Quasi, perspiciatis? Nemo porro praesentium, aut nisi vero ipsa doloremque veritatis fugiat quod beatae cupiditate similique perspiciatis assumenda sed. Asperiores laborum nisi corrupti cum tempore. Magni saepe voluptates dolor est.</p>
-            </div>
-            <div>
-                <img src="#" alt="imageOfProject">
-            </div>
-        </div>
-        <div>
-        <div>
-            <img src="#" alt="imageOfProject">
-        </div>
-            <div>
-                <h2>Project 1</h2>
-                <h5>Mobile application 1.....</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus repellendus magnam perferendis aut dolore deserunt quo cum accusantium. Ullam quae, possimus quibusdam corporis voluptates vero ut aliquam sit rem laboriosam?
-                Quasi, perspiciatis? Nemo porro praesentium, aut nisi vero ipsa doloremque veritatis fugiat quod beatae cupiditate similique perspiciatis assumenda sed. Asperiores laborum nisi corrupti cum tempore. Magni saepe voluptates dolor est.</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h1>Contact</h1>
-        <p>I'm currently available for freelance gigs charleyy... kindly hit me up in case of anything biaa, na the country make hot.</p>
-        <p>Send me a Message</p>
-        <div>
-            <label for="name">Your name:</label>
-            <input type="text" id="name" required>
-        </div>
-        <div>
-            <label for="email">Your email:</label>
-            <input type="email" id="email" required>
-        </div>
-        <div>
-            <label for="message">Your message:</label>
-            <textarea name="message" id="message"></textarea>
-        </div>
-        <button><a href="#">Send Message</a></button>
-    </section>
-  </body>
+  </header>
+  <section>
+    <h1>About me</h1>
+    <div>
+      <div>
+        <img
+          src="#"
+          alt="myPic2"
+        >
+      </div>
+      <div>
+        <p>"Hi, I'm Michael, a passionate UI/UX Designer and Junior Web Developer. With a background in Computer
+          Engineering, I've dived deep into design and development, working on various projects, including web and app
+          designs. Currently, I’m advancing my skills through hands-on web development training with Generation Ghana
+          and MEST Africa, focusing on building functional and aesthetically pleasing digital experiences."</p>
+        <button><a href="#">Preview my Resume</a></button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Skills</h1>
+    <p>I am striving to never stop learning and improving.</p>
+    <div>
+      <ul>
+        <li>UI/UX Design</li>
+        <li>Frontend Web Development</li>
+        <li>Data Analytics</li>
+        <li>MS Office Suit</li>
+      </ul>
+    </div>
+    <marquee>
+
+    </marquee>
+  </section>
+  <section>
+    <h1>Portfolio</h1>
+    <div>
+      <div>
+        <h2>Project 1</h2>
+        <h5>Mobile application 1.....</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus repellendus magnam perferendis aut dolore
+          deserunt quo cum accusantium. Ullam quae, possimus quibusdam corporis voluptates vero ut aliquam sit rem
+          laboriosam?
+          Quasi, perspiciatis? Nemo porro praesentium, aut nisi vero ipsa doloremque veritatis fugiat quod beatae
+          cupiditate similique perspiciatis assumenda sed. Asperiores laborum nisi corrupti cum tempore. Magni saepe
+          voluptates dolor est.</p>
+      </div>
+      <div>
+        <img
+          src="#"
+          alt="imageOfProject"
+        >
+      </div>
+    </div>
+    <div>
+      <div>
+        <img
+          src="#"
+          alt="imageOfProject"
+        >
+      </div>
+      <div>
+        <h2>Project 1</h2>
+        <h5>Mobile application 1.....</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus repellendus magnam perferendis aut dolore
+          deserunt quo cum accusantium. Ullam quae, possimus quibusdam corporis voluptates vero ut aliquam sit rem
+          laboriosam?
+          Quasi, perspiciatis? Nemo porro praesentium, aut nisi vero ipsa doloremque veritatis fugiat quod beatae
+          cupiditate similique perspiciatis assumenda sed. Asperiores laborum nisi corrupti cum tempore. Magni saepe
+          voluptates dolor est.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>Contact</h1>
+    <p>I'm currently available for freelance gigs charleyy... kindly hit me up in case of anything biaa, na the country
+      make hot.</p>
+    <p>Send me a Message</p>
+    <div>
+      <label for="name">Your name:</label>
+      <input
+        type="text"
+        id="name"
+        required
+      >
+    </div>
+    <div>
+      <label for="email">Your email:</label>
+      <input
+        type="email"
+        id="email"
+        required
+      >
+    </div>
+    <div>
+      <label for="message">Your message:</label>
+      <textarea
+        name="message"
+        id="message"
+      ></textarea>
+    </div>
+    <button><a href="#">Send Message</a></button>
+  </section>
+</body>
+
 </html>
