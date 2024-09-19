@@ -3,8 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Raleway", sans-serif !important;
+  background-color: rgba(0, 0, 0, 0.384);
+  /* background-image: url(../images/backgroundImg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%; */
 }
 
 ul {
@@ -20,8 +27,11 @@ a {
 }
 
 header {
-  background-color: rgba(41, 41, 41, 0.582);
+  /* background-color: rgb(27, 27, 27); */
   color: white;
+  background-image: url("../images/backgroundImg.jpg");
+  background-size: cover;
+  /* filter: brightness(50%); */
 }
 
 .nav-bar {
@@ -96,8 +106,8 @@ button:hover {
 .hero {
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 50px;
+  /* position: relative; */
+  /* top: 50px; */
   /* width: 100%; */
 }
 
@@ -124,19 +134,19 @@ button:hover {
 
 .hero-textContent h1 {
   font-size: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .introCaption {
   /* font-size: 45px; */
   line-height: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 500px;
 }
 
-.hero-imageContent {
-  /* width: 500px; */
-}
+/* .hero-imageContent {
+  //width: 500px;
+} */
 
 .userImage1 {
   width: 400px;
@@ -159,4 +169,230 @@ button:hover {
 
 .social-links a:hover {
   opacity: 1;
+}
+
+.hallmark {
+  margin: 20px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  gap: 2%;
+  text-align: center;
+}
+
+.hallmark-image {
+  width: 50px;
+}
+
+.hallmark-headline {
+  font-size: 60px;
+  margin-top: -10px;
+  color: rgb(183, 168, 35);
+}
+
+.hallmark p {
+  color: white;
+  font-size: 15px;
+}
+
+.hallmark-1 {
+  width: 200px;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+p {
+  color: white;
+}
+
+.serviceParent {
+  margin: 20px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 10px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* grid-column-gap: 0px;
+  grid-row-gap: 0px; */
+  gap: 20px;
+}
+
+.serviceHead {
+  color: rgb(183, 168, 35);
+  margin-bottom: 10px;
+}
+
+.serviceNumber {
+  padding: 10px;
+  width: fit-content;
+  border: solid 0.1rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.service-div1 {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+.service-div2 {
+  grid-area: 1 / 4 / 2 / 6;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+.service-div3 {
+  grid-area: 2 / 1 / 3 / 3;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+.service-div4 {
+  grid-area: 2 / 3 / 3 / 6;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.userImage2 {
+  width: 200px;
+}
+
+.aboutParent {
+  margin: 20px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 10px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+  gap: 20px;
+}
+
+.about-div1 {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+.about-div2 {
+  grid-area: 1 / 3 / 2 / 7;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+.about-div3 {
+  grid-area: 2 / 1 / 3 / 4;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+.about-div4 {
+  grid-area: 2 / 4 / 3 / 7;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+.about-div5 {
+  grid-area: 3 / 1 / 4 / 7;
+  background-color: rgba(95, 95, 95, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.school-element {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.programStudied {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.schoolName {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.studyDuration {
+  font-size: small;
+  padding: 4px;
+  width: fit-content;
+  border: solid 0.1px;
+  border-radius: 6px;
+  color: #999;
+  /* margin-bottom: 10px; */
+}
+
+.school-logo {
+  height: 12vh;
+  width: 70px;
+}
+
+.company-logo {
+  width: 70px;
+}
+
+.job-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-bottom: dashed 0.1rem rgba(183, 168, 35, 0.3);
+  
+}
+
+.job-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.company-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.job-left {
+  width: 275px;
+  /* border: solid; */
+}
+
+.my-position {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.role {
+  color: rgb(183, 168, 35);
+  font-weight: normal;
+}
+
+.job-duration {
+  color: rgb(183, 168, 35);
+  font-size: 20px;
+  text-align: right;
+}
+
+.white-text {
+  color: white;
+}
+
+.toolImage {
+  width: 10px;
+}
+
+.toolDescription {
+  color: #999;
 }
