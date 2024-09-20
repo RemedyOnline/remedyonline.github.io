@@ -6,7 +6,7 @@
 
 body {
   font-family: "Raleway", sans-serif !important;
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: #111;
   /* background-image: url(../images/backgroundImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -213,6 +213,7 @@ p {
   font-size: 50px;
   font-style: italic;
   text-decoration: underline;
+  color: white;
 }
 
 .serviceParent {
@@ -654,6 +655,25 @@ input[type="radio"]:checked + label {
   margin-bottom: 10px;
   background-color: #333;
   border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.textbox,
+.input-box::placeholder {
+  font-size: 20px;
+  opacity: 0.5;
+  font-family: fantasy;
+  /* color: red; */
+}
+
+.textbox,
+.input-box:active {
+  font-size: 20px;
+  background-color: #f9f9f9;
+  opacity: 0.5;
+  font-family: fantasy;
+  /* color: red; */
 }
 
 .textbox {
@@ -661,7 +681,16 @@ input[type="radio"]:checked + label {
   padding: 50px;
   padding-left: 20px;
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   background-color: #333;
+  color: white;
+  font-size: 20px;
   border: none;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
 }
