@@ -551,13 +551,14 @@ input[type="radio"]:checked + label {
 
 .carousel {
   position: relative;
-  width: 25%;
-  height: 415px;
-  /* overflow: hidden; */
+  /* width: 25%; */
+  height: 400px;
+  overflow: hidden;
 }
 
 .carousel-inner {
   display: flex;
+  width: 320px;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -581,6 +582,14 @@ input[type="radio"] {
 
 #slide3:checked ~ .carousel-inner {
   transform: translateX(-200%);
+}
+
+#slide4:checked ~ .carousel-inner {
+  transform: translateX(-300%);
+}
+
+#slide5:checked ~ .carousel-inner {
+  transform: translateX(-400%);
 }
 
 .carousel-controls {
